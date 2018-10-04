@@ -2,19 +2,19 @@
 title: 包含檔案
 description: 包含檔案
 services: functions
-author: tdykstra
+author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
 ms.date: 06/21/2018
-ms.author: tdykstra
+ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: d1f9a07ce3d3b096b498e48b5c4f68c3454b2b37
-ms.sourcegitcommit: e721422a57e6deb95245135fd9f4f5677c344d93
+ms.openlocfilehash: 426a7287458a48d1bda220ad1a5f067be2ce77d6
+ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2018
-ms.locfileid: "40079133"
+ms.lasthandoff: 10/01/2018
+ms.locfileid: "47460036"
 ---
 Azure App Service 驗證可在 Azure 函式應用程式實現周全的驗證支援。 它可與 Facebook、Twitter、Microsoft 帳戶、Google 和 Azure Active Directory 無縫整合。 您會新增 App Service 驗證來保護 Web 應用程式的後端 API。
 
@@ -34,7 +34,7 @@ Azure App Service 驗證可在 Azure 函式應用程式實現周全的驗證支�
     | **當要求未經驗證時所要採取的動作** | 使用 Azure Active Directory 登入 | 選取已設定的驗證方法 (下方)。 |
     | **驗證提供者** | 請參閱下方 | 請參閱下方 |
     | **權杖存放區** | 另一 | 可讓 App Service 儲存和管理權杖。 |
-    | **允許的外部重新導向 URL** | 應用程式的 URL，例如：https://firstserverlessweb.z4.web.core.windows.net/ | 使用者通過驗證後，可作為 App Service 重新導向目標的 URL。 |
+    | **允許的外部重新導向 URL** | 應用程式的 URL，例如： https://firstserverlessweb.z4.web.core.windows.net/ | 使用者通過驗證後，可作為 App Service 重新導向目標的 URL。 |
 
 1. 選取 [Azure Active Directory] 以顯示 [Azure Active Directory 設定]。
 
