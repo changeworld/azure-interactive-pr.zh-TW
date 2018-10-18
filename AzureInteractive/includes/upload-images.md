@@ -6,15 +6,15 @@ author: ggailey777
 manager: jeconnoc
 ms.service: multiple
 ms.topic: include
-ms.date: 06/21/2018
+ms.date: 10/12/2018
 ms.author: glenga
 ms.custom: include file
-ms.openlocfilehash: 51c7d3e64424d499b473f3b138ce249a9cfd0182
-ms.sourcegitcommit: 81587470a181e314242c7a97cd0f91c82d4fe232
+ms.openlocfilehash: 3779c2e130afa7ee8d5879f30a924e258b7a41e9
+ms.sourcegitcommit: fdb43556b8dcf67cb39c18e532b5fab7ac53eaee
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/01/2018
-ms.locfileid: "47460073"
+ms.lasthandoff: 10/15/2018
+ms.locfileid: "49315971"
 ---
 您所要建置的應用程式是影像中心。 它會使用用戶端 JavaScript 來呼叫 API，以便上傳和顯示影像。 在本單元中，您會使用無伺服器函式建立 API，以產生有時間限制的 URL 來上傳影像。 Web 應用程式會使用所產生的 URL，透過 [Blob 儲存體 REST API](https://docs.microsoft.com/rest/api/storageservices/blob-service-rest-api) 將影像上傳至 Blob 儲存體。
 
@@ -44,12 +44,12 @@ az functionapp create -n <function app name> -g first-serverless-app -s <storage
 
 ## <a name="configure-the-function-app"></a>設定函式應用程式
 
-本教學課程中的函式應用程式需要使用版本 1.x 的 Azure Functions 執行階段。 將 `FUNCTIONS_WORKER_RUNTIME` 應用程式設定設為 `~1`，以將函式應用程式釘選至最新的 1.x 版本。 使用 [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set) 命令設定應用程式設定。
+本教學課程中的函式應用程式需要使用版本 1.x 的 Azure Functions 執行階段。 將 `FUNCTIONS_EXTENSION_VERSION` 應用程式設定設為 `~1`，以將函式應用程式釘選至最新的 1.x 版本。 使用 [az functionapp config appsettings set](https://docs.microsoft.com/cli/azure/functionapp/config/appsettings#set) 命令設定應用程式設定。
 
-在下列 Azure CLI 命令中，`<app_name> 是函式應用程式的名稱。
+在下列 Azure CLI 命令中，`<app_name> 是您函數應用程式的名稱。
 
 ```azurecli
-az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_WORKER_RUNTIME=~1
+az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
 ```
 
 ## <a name="create-an-http-triggered-serverless-function"></a>建立由 HTTP 觸發的無伺服器函式
