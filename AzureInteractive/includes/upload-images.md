@@ -142,7 +142,7 @@ az functionapp config appsettings set --name <function app name> --g first-serve
 
 1. 將 [HTTP 方法] 變更為 [GET]。
 
-1. 在 [查詢] 之下，按一下 [新增參數] 並新增下列參數：
+1. 在 [查詢] 之下，按一下 [新增參數]\* 並新增下列參數：
 
     | name      |  value   | 
     | --- | --- |
