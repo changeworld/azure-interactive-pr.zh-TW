@@ -49,7 +49,7 @@ az functionapp create -n <function app name> -g first-serverless-app -s <storage
 在下列 Azure CLI 命令中，`<app_name> 是您函數應用程式的名稱。
 
 ```azurecli
-az functionapp config appsettings set --name <function app name> --g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
+az functionapp config appsettings set --name <function app name> -g first-serverless-app --settings FUNCTIONS_EXTENSION_VERSION=~1
 ```
 
 ## <a name="create-an-http-triggered-serverless-function"></a>建立由 HTTP 觸發的無伺服器函式
